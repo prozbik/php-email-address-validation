@@ -1,0 +1,23 @@
+#summary Download and usage instructions for the code.
+#labels Featured
+
+= Download =
+
+To download the email address validation code, you will need to click on "Source" above, and follow the instructions in that section.
+
+You will be able to download the more recent (or any previous) version of the code from the "trunk" folder of the repository, or you can use the source browser to grab the code without using Subversion.
+
+A unit test class can be found in the "tests" folder.
+
+
+= Example Usage = 
+
+{{{
+include('EmailAddressValidator.php');
+$validator = new EmailAddressValidator;
+if ($validator->check_email_address('test@example.org')) { 
+    // Email address is technically valid 
+} else {
+    // Email not valid
+}
+}}}
